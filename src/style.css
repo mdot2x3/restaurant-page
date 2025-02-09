@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 html, body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
@@ -53,11 +57,16 @@ nav button {
   height: auto; 
 }
 
-@media screen and (min-height: 1000px) {
-  .banner img {
-    width: 50%;
-    height: auto; 
-  }
+.text-bubble {
+  width: 90%;
+  height: auto; 
+  padding: 10%;
+  margin: -5%;
+  background-image: linear-gradient(-45deg, #ba71ff, #ff71b8);
+  clip-path: inset(40px);
+  clip-path: inset(40px 20px);
+  clip-path: inset(40px 20px 40% 50px);
+  clip-path: inset(40px 20px round 15% 0);
 }
 
 footer {
@@ -65,4 +74,24 @@ footer {
   display: flex;
   justify-content: center;
   background-color: hotpink;
+}
+
+@media screen and (min-height: 1000px) {
+  .container {
+    max-width: 50%;
+    min-height: 100vh;
+    border-radius: 10px;
+    background-color: rgba(23, 196, 196, 0.801);
+  }
+
+  .banner img {
+    width: 75%;
+    height: auto; 
+  }
+
+  .text-bubble {
+    width: 70%;
+    padding: 5%;
+    margin: -1%;
+  }
 }
