@@ -1,3 +1,68 @@
-body {
-  background-color: silver;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  background-image: url("/home/odinstudent/odinprojects/repos/restaurant-page/assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: hotpink;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px;
+}
+
+#content {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+  max-width: 75%;
+  min-height: 100vh;
+  border-radius: 10px;
+  background-color: rgba(23, 196, 196, 0.801);
+}
+
+.banner img {
+  width: 90%;
+  height: auto; 
+}
+
+@media screen and (min-height: 1000px) {
+  .banner img {
+    width: 50%;
+    height: auto; 
+  }
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: hotpink;
 }
