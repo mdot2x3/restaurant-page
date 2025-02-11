@@ -1,9 +1,7 @@
 import "./style.css";
+import { home } from "./home"
 
-// alert("This works.");
-// console.log("This also works.");
-
-// apply background image to selected nav bar li button
+// navbar li background image
 document.addEventListener("DOMContentLoaded", function() {
     const listItems = document.querySelectorAll("nav ul li");
 
@@ -15,3 +13,5 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+home();

@@ -105,6 +105,10 @@ nav li:hover {
   clip-path: inset(40px 20px round 15% 0);
 }
 
+.text-bubble p, .text-bubble ul {
+  margin-top: 10px;
+}
+
 footer {
   height: 100px;
   display: flex;
@@ -120,7 +124,7 @@ footer {
 }
 
 #credits a {
-  padding: 12px; 
+  padding: 12px;
 }
 
 @media screen and (min-height: 1000px) {
