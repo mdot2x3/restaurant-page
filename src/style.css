@@ -15,18 +15,53 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 nav {
-  height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
   background-color: hotpink;
 }
 
-nav button {
+.logo {
+  margin-bottom: 15px;
+  height: 70px;
+  width: 70px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+li {
   margin: 5px;
   padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+li.selected {
+  background-image: url(/home/odinstudent/odinprojects/repos/restaurant-page/assets/bubble2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  font-weight: bold;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.spacer {
+  width: 70px;
 }
 
 #content {
@@ -54,7 +89,8 @@ nav button {
 
 .banner img {
   width: 90%;
-  height: auto; 
+  height: auto;
+  clip-path: inset(0% 1% 0% 1% round 10px);
 }
 
 .text-bubble {
