@@ -1,5 +1,6 @@
 import "./style.css";
-import { home } from "./home"
+import { home } from "./home";
+import { menu } from "./menu";
 
 // navbar li background image
 document.addEventListener("DOMContentLoaded", function() {
@@ -14,4 +15,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-home();
+//home();
+menu();

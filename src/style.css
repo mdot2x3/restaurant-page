@@ -109,6 +109,19 @@ nav li:hover {
   margin-top: 10px;
 }
 
+/* menu page settings */
+table {
+  margin: 10px auto;
+}
+
+td {
+  padding: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
 footer {
   height: 100px;
   display: flex;
