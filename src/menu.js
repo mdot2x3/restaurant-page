@@ -23,6 +23,7 @@ export function menu() {
     const h2MilkTea = document.createElement("h2");
     h2MilkTea.textContent = "Milk Tea";
     const table1 = document.createElement("table");
+    // array of objects with two properties
         const milkTeaItems = [
             {name: "Classic", price: "$5"},
             {name: "Thai", price: "$6"},
@@ -32,6 +33,8 @@ export function menu() {
             { name: "Ginger", price: "$10" },
             { name: "Jasmine", price: "$11" }
         ];
+        // each object in the array is split into td, then assigned to a tr, then assigned to a table
+        // price class is added for css styling
         milkTeaItems.forEach(item => {
             const tr = document.createElement("tr");
 

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Page</title>
+  <!-- preload images to load them faster upon DOM creation -->
   <link rel="preload" as="image" href="/home/odinstudent/odinprojects/repos/restaurant-page/assets/background.jpg">
   <link rel="preload" as="image" href="/home/odinstudent/odinprojects/repos/restaurant-page/assets/girl1.jpg">
   <link rel="preload" as="image" href="/home/odinstudent/odinprojects/repos/restaurant-page/assets/girl2.jpg">
@@ -11,6 +12,7 @@
 <body>
   <header>
     <nav>
+      <!-- set logo icon size here (in addition to css) to prevent large loadup size -->
       <img src="/home/odinstudent/odinprojects/repos/restaurant-page/assets/tea-trio.png" 
       alt="logo" 
       class="logo"
@@ -24,31 +26,7 @@
       <div class="spacer"></div>
     </nav>
   </header>
-  <div id="content">
-
-    
-    <!-- <div class="container">
-      <div class="text-bubble">
-        <h1>About</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar tellus aliquet pulvinar commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut ultrices vulputate magna sed mattis.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar tellus aliquet pulvinar commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut ultrices vulputate magna sed mattis.
-        </p>
-      </div>
-      <div class="text-bubble">
-        <h2>Contact</h2>
-        <p>Phone: 555-555-5555</p>
-        <p>Email: bubbleteashop@email.com</p>
-      </div>
-      <div class="banner">
-        <img src="/home/odinstudent/odinprojects/repos/restaurant-page/assets/tea-solo.png" alt="">
-      </div>
-    </div> -->
-
-
-  </div>
+  <div id="content">  <!-- DOM content inserted here -->  </div>
   <footer>
     <div id="credits">
       <a href="https://www.freepik.com/free-vector/coffee-pattern-background_74885821.htm#fromView=keyword&page=1&position=2&uuid=01c51010-f1b2-4bba-87a6-4f28dcdec91d&query=Bubble+Tea+Background">Background by freepik</a>

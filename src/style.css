@@ -47,6 +47,7 @@ nav li {
   transition: background 0.3s ease;
 }
 
+/* settings for bubble background image on selected li element */
 li.selected {
   background-image: url(/home/odinstudent/odinprojects/repos/restaurant-page/assets/bubble2.png);
   background-size: contain;
@@ -140,6 +141,7 @@ footer {
   padding: 12px;
 }
 
+/* media settings for size adjustments when full screen */
 @media screen and (min-height: 1000px) {
   .container {
     max-width: 50%;

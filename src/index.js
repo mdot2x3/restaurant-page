@@ -3,19 +3,36 @@ import { home } from "./home";
 import { menu } from "./menu";
 import { about } from "./about";
 
-// navbar li background image
-document.addEventListener("DOMContentLoaded", function() {
-    const listItems = document.querySelectorAll("nav ul li");
-
-    listItems.forEach(item => {
-        item.addEventListener("click", function() {
-            listItems.forEach(i => i.classList.remove("selected"));
-
-            this.classList.add("selected");
-        });
-    });
+// load home content on launch
+document.addEventListener("DOMContentLoaded", () => {
+    home();
 });
 
-//home();
-//menu();
-about();
+// nav bar page loader logic
+document.querySelector("nav").addEventListener("click", (event) => {
+    const content = document.querySelector("#content");
+
+    // if clicked target in the nav bar is an li element
+    if (event.target.tagName === "LI") {
+        // select all li elements, remove selected class, and add selected class to the target
+        const listItems = document.querySelectorAll("nav ul li");
+        listItems.forEach(i => i.classList.remove("selected"));
+        event.target.classList.add("selected");
+        
+        // clear the content section
+        content.innerHTML = "";
+
+        // set the content section of the clicked on li's string
+        switch (event.target.textContent) {
+            case "Home":
+                home();
+                break;
+            case "Menu":
+                menu();
+                break;
+            case "About":
+                about();
+                break;
+        }
+    }
+});
