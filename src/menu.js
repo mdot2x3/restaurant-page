@@ -1,14 +1,13 @@
 import bannerImage from "/home/odinstudent/odinprojects/repos/restaurant-page/assets/girl2.jpg";
 
 export function menu() {
-const content = document.querySelector("#content");
+    const content = document.querySelector("#content");
 
     const container = document.createElement("div");
     container.classList.add("container");
 
     const banner = document.createElement("div");
     banner.classList.add("banner");
-
     const image = document.createElement("img");
     image.src = bannerImage;
 

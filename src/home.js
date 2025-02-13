@@ -8,7 +8,6 @@ export function home() {
 
     const banner = document.createElement("div");
     banner.classList.add("banner");
-
     const image = document.createElement("img");
     image.src = bannerImage;
 
