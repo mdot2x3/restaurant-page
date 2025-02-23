@@ -142,7 +142,7 @@ footer {
 }
 
 /* media settings for size adjustments when full screen */
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 800px) {
   .container {
     max-width: 50%;
     min-height: 100vh;
@@ -159,5 +159,41 @@ footer {
     width: 70%;
     padding: 5%;
     margin: -1%;
+  }
+}
+
+/* media settings for size adjustments for a small window */
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .text-bubble {
+    width: 95%;
+    padding: 12%;
+    margin: 0;
+    clip-path: inset(20px 10px round 8% 0);
+  }
+}
+
+/* media settings for size adjustments for a medium window */
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+  .container {
+    max-width: 60%;
+  }
+
+  .banner img {
+    width: 85%;
+  }
+
+  .text-bubble {
+    width: 80%;
+    padding: 8%;
+    margin: -3%;
+    clip-path: inset(30px 15px round 10% 0);
   }
 }
